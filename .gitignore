@@ -47,6 +47,7 @@ mkinstalldirs
 nikon-curve
 stamp-h1
 ufraw
+ufraw.1
 ufraw-batch
 ufraw-exif
 ufraw-gimp
