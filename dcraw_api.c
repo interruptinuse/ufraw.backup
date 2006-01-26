@@ -102,8 +102,7 @@ int dcraw_open(dcraw_data *h,char *filename)
     }
     /* Next we check if dcraw can decode the file */
     if (!is_raw) {
-	dcraw_message(DCRAW_OPEN_ERROR, "%s: Cannot decode %s %s images.\n",
-		ifname, make, model);
+	dcraw_message(DCRAW_OPEN_ERROR, "Cannot decode %s\n", ifname);
         fclose(ifp);
         g_free(ifname);
         h->message = messageBuffer;
